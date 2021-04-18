@@ -1,6 +1,11 @@
 """
 Please find copyright information at the end of this document
 Por favor encuentra la información de derechos de autor al final de este documento
+
+Este fue el código más estable que encontré en línea, gracias a Jim Term por todo su trabajo.
+
+Social networks: MGonzalez506
+dev@mgonzalez506.com
 """
 
 """
