@@ -4,7 +4,10 @@ Por favor encuentra la información de derechos de autor al final de este docume
 
 Este fue el código más estable que encontré en línea, gracias a Jim Term por todo su trabajo.
 
-Social networks: MGonzalez506
+
+Mi nombre es Miguel González. ¡Colaboremos juntos!
+
+Redes Sociales / Social Networks: MGonzalez506
 dev@mgonzalez506.com
 """
 
