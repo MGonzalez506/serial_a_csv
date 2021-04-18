@@ -12,8 +12,10 @@ dev@mgonzalez506.com
 """
 
 """
-Paquetes necesarios
+Paquetes necesarios:
+
 Módulo Serial --> pip install pyserial
+Módulo para convertir zonas horarias --> pip install pytz
 """
 
 #!/usr/bin/env python
@@ -29,6 +31,7 @@ import signal
 import fcntl
 import string
 import re
+from guardar_en_csv import save_buffer
 
 # Need OS-specific method for getting keyboard input.
 if os.name == 'nt':
@@ -248,8 +251,9 @@ class Jimterm:
 					data = self.quote_raw(data)
 				for x in data:
 					if x == 10: #Imprime una linea nueva
-						os.write(sys.stdout.fileno(), _inBuffer.encode('utf-8'))
-						os.write(sys.stdout.fileno(), "\n".encode('utf-8'))
+						save_buffer(_inBuffer)
+						#os.write(sys.stdout.fileno(), _inBuffer.encode('utf-8'))
+						#os.write(sys.stdout.fileno(), "\n".encode('utf-8'))
 						_inBuffer = ""
 					else:
 						_inBuffer += chr(x)
